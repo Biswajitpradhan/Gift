@@ -92,20 +92,40 @@
             cursor: pointer
         }
 
-        #openGiftData{
+        #openGiftData {
             display: flex;
             justify-content: center;
+        }
+
+        #openGiftData button{
+            background-color: #318dd5;
+            /* padding: 30px; */
+            height: 52px;
+            width: 139px;
+            border-radius: 51px;
+            border: none;
+            color: white;
+            outline: none;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        #openGiftData button:hover{
+            background-color: white;
+            color: #318dd5;
+            border: 2px solid #318dd5 ;
+            transition: 0.5s ease-in-out;
         }
     </style>
 
     <script>
 
-        function openGift(){
-            let giftData=document.getElementById("giftShow")
+        function openGift() {
+            let giftData = document.getElementById("giftShow")
             let buttonClick = document.getElementById("openGiftData")
-            giftData.style.display="flex"
-            buttonClick.style.display="none"
-            
+            giftData.style.display = "flex"
+            buttonClick.style.display = "none"
+
         }
     </script>
 </head>
